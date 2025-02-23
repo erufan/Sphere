@@ -6,10 +6,11 @@
   --color-body: #918ca4;
 }
 
+/* typography */
 body {
   color: var(--color-body);
-  font-size: 2.4rem;
   font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
 }
 
 html {
@@ -55,5 +56,33 @@ p {
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/* links */
+a {
+  text-decoration: none;
+}
+
+.arrow-link {
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.arrow-link::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.arrow-link:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .arrow-link {
+    font-size: 1.5rem;
   }
 }
