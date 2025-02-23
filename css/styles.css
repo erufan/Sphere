@@ -155,3 +155,23 @@ a {
     font-size: 1.8rem;
   }
 }
+
+/* icons */
+.icon-container {
+  align-items: center;
+  background-color: #f3f9fa;
+  border-radius: 100%;
+  display: inline-flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
